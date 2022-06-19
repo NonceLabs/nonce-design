@@ -94,7 +94,7 @@ export default {
       default: {
         backgroundColor: 'transparent',
         color: '#333',
-        borderColor: '#e3e3e3',
+        borderColor: '#333',
         buttonSize,
         ButtonTextSize,
       },

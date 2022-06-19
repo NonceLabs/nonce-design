@@ -1,11 +1,19 @@
 {
   "name": "nonce-design",
-  "version": "0.1.0",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "version": "0.1.5",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc"
   },
+  "files": [
+    "components",
+    "lib",
+    "types",
+    "index.ts",
+    "hooks",
+    "theme"
+  ],
   "keywords": [
     "react-native",
     "nonce-design",
@@ -24,17 +32,18 @@
     "iconoir-react-native": "^5.0.0",
     "pubsub-js": "^1.9.4",
     "react-native-gesture-handler": "~2.2.1",
+    "react-native-portalize": "^1.0.7",
     "react-native-safe-area-context": "^4.3.1",
     "react-native-svg": "12.3.0"
   },
   "devDependencies": {
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-native": "0.68.2",
     "@babel/core": "^7.12.9",
     "@types/pubsub-js": "^1.8.3",
     "@types/react": "~17.0.21",
     "@types/react-native": "~0.66.13",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-native": "0.68.2",
     "typescript": "~4.3.5"
   }
 }

@@ -10,7 +10,7 @@ import Toast from './components/Toast'
 import ToastInstance from './components/Toast/Instance'
 import { Text, View } from './components/Themed'
 
-export default {
+export {
   Input,
   Box,
   Text,

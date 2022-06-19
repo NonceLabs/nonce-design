@@ -1,8 +1,10 @@
 import { GestureHandlerRootView } from 'react-native-gesture-handler'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
+import { Host, Portal } from 'react-native-portalize'
 import { ThemeContext } from '../../hooks/useThemeContext'
 import Colors from '../../theme'
 import { ThemeProps } from '../../types'
+import ToastInstance from '../Toast/Instance'
 
 export default function Layout({
   children,
@@ -16,9 +18,14 @@ export default function Layout({
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <SafeAreaProvider>
-        <ThemeContext.Provider value={{ ...Colors, active: themeColor }}>
-          {children}
-        </ThemeContext.Provider>
+        <Host>
+          <ThemeContext.Provider value={{ ...Colors, active: themeColor }}>
+            {children}
+            <Portal>
+              <ToastInstance />
+            </Portal>
+          </ThemeContext.Provider>
+        </Host>
       </SafeAreaProvider>
     </GestureHandlerRootView>
   )
