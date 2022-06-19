@@ -1,22 +1,18 @@
-import Layout from '../components/Layout'
-import { ScrollView, StyleSheet } from 'react-native'
-import Button from '../components/Button'
-import Toast from '../components/Toast'
-import ToastInstance from '../components/Toast/Instance'
-import Heading from '../components/Heading'
-import Box from '../components/Box'
-import { View } from '../components/Themed'
-import CheckBoxGroup from '../components/CheckBoxGroup'
-import { useState } from 'react'
-import RadioGroup from '../components/RadioGroup'
-import Input from '../components/Input'
-import SettingBlock from '../components/SettingBlock'
 import {
-  GitHub,
-  HistoricShieldAlt,
-  ShieldAlt,
-  User,
-} from 'iconoir-react-native'
+  Layout,
+  Button,
+  Toast,
+  Heading,
+  Box,
+  View,
+  CheckBoxGroup,
+  RadioGroup,
+  Input,
+  SettingBlock,
+} from 'nonce-design'
+import { ScrollView, StyleSheet } from 'react-native'
+import { useState } from 'react'
+import { GitHub, HistoricShieldAlt, User } from 'iconoir-react-native'
 
 export default function App() {
   const [checked, setChecked] = useState<string[]>([])
@@ -137,7 +133,6 @@ export default function App() {
           />
         </Box>
       </ScrollView>
-      <ToastInstance />
     </Layout>
   )
 }

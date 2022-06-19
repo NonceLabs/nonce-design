@@ -8,6 +8,7 @@ export default function Button({
   label,
   onPress,
   style,
+  backgroundColor,
   size = 'medium',
   type = 'default',
   disabled = false,
@@ -22,6 +23,7 @@ export default function Button({
   disabled?: boolean
   primary?: boolean
   full?: boolean
+  backgroundColor?: string
 }) {
   const theme = useContext(ThemeContext)
   const istyles = theme[theme.active]
@@ -34,8 +36,8 @@ export default function Button({
       style={[
         styles.button,
         {
-          backgroundColor: buttonStyle.backgroundColor,
-          borderColor: buttonStyle.borderColor,
+          backgroundColor: backgroundColor ?? buttonStyle.backgroundColor,
+          borderColor: backgroundColor ?? buttonStyle.borderColor,
           width: full ? '100%' : 'auto',
         },
         style,
