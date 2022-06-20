@@ -18,6 +18,7 @@ export default function ToastInstance() {
       msg: string,
       { type, message, duration }: ToastPayload
     ) => {
+      console.log(msg)
       setType(type)
       setMessage(message)
       Animated.parallel([

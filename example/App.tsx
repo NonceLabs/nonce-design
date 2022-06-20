@@ -1,29 +1,17 @@
-import {
-  Layout,
-  Button,
-  Toast,
-  Heading,
-  Box,
-  View,
-  CheckBoxGroup,
-  RadioGroup,
-  Input,
-  SettingBlock,
-} from 'nonce-design'
+import Nonce, { Layout } from 'nonce-design'
 import { ScrollView, StyleSheet } from 'react-native'
 import { useState } from 'react'
 import { GitHub, HistoricShieldAlt, User } from 'iconoir-react-native'
+
+console.log('', Nonce, Layout)
 
 export default function App() {
   const [checked, setChecked] = useState<string[]>([])
   const [radio, setRadio] = useState<string | undefined>()
   return (
-    <Layout themeColor="light">
-      <ScrollView
-        style={styles.container}
-        contentContainerStyle={styles.content}
-      >
-        <Heading>SettingBlock</Heading>
+    // <Layout themeColor="light">
+    <ScrollView style={styles.container} contentContainerStyle={styles.content}>
+      {/* <Heading>SettingBlock</Heading>
         <Box full>
           <SettingBlock
             title="Settings"
@@ -131,9 +119,9 @@ export default function App() {
               Toast.success('Success')
             }}
           />
-        </Box>
-      </ScrollView>
-    </Layout>
+        </Box> */}
+    </ScrollView>
+    // </Layout>
   )
 }
 

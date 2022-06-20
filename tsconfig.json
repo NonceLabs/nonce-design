@@ -1,20 +1,23 @@
 {
   "compilerOptions": {
-    "strict": true,
-    "target": "es2017",
-    "lib": ["es6", "es2016"],
-    "jsx": "react-native",
-    "module": "commonjs",
-    "declaration": true,
-    "outDir": "lib",
+    "allowJs": false,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
     "esModuleInterop": true,
-    "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "incremental": true,
+    "jsx": "react-native",
+    "lib": ["dom", "esnext"],
+    "module": "esnext",
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "types": ["react", "react-native"]
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noStrictGenericChecks": false,
+    "noUncheckedIndexedAccess": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "esnext"
   },
-  "include": ["index.ts"],
-  "exclude": ["node_modules", "dist", "example"]
+  "include": ["src", "babel.config.js"],
+  "exclude": ["node_modules", "lib", "example"]
 }

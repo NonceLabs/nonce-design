@@ -4946,10 +4946,10 @@ node-stream-zip@^1.9.1:
   resolved "https://registry.npmjs.org/node-stream-zip/-/node-stream-zip-1.15.0.tgz#158adb88ed8004c6c49a396b50a6a5de3bca33ea"
   integrity sha512-LN4fydt9TqhZhThkZIVQnF9cwjU3qmUH9h78Mx/K7d3VvfRqqwthLwJEUOEL0QPZ0XQmNN7be5Ggit5+4dq3Bw==
 
-nonce-design@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.npmjs.org/nonce-design/-/nonce-design-0.1.6.tgz#ea9594938df43620761869f22110ef107c71447b"
-  integrity sha512-VEKQHqjaEPtGGmef5yeUjDJ/nE0Uam4W18RvB1boeQ4pXv5EnfnMBBSfA/3U+H+4Fh8LLifC3pJZww8kkXrRDg==
+nonce-design@^0.1.9:
+  version "0.1.9"
+  resolved "https://registry.npmjs.org/nonce-design/-/nonce-design-0.1.9.tgz#fdcefd7dc1d6bcdaecc2eca9ccc2a02f9e1d90f6"
+  integrity sha512-2HwB7A/QTuyIpvyzY4KgZCzHeKBRcPQuv4CJhvdnsv8hGux0r0wJbF1ZbQs8X6eUCGHqS4/h1mUzQJ04LWPnFA==
   dependencies:
     iconoir-react-native "^5.0.0"
     pubsub-js "^1.9.4"
