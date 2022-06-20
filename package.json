@@ -1,6 +1,6 @@
 {
   "name": "nonce-design",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
   "react-native": "src/index.tsx",
@@ -14,7 +14,7 @@
   },
   "scripts": {
     "prepare": "bob build",
-    "validate:typescript": "tsc --project ./ --noEmit"
+    "validate:typescript": "tsc --project ./src --noEmit"
   },
   "files": [
     "src",
